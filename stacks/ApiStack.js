@@ -13,6 +13,7 @@ export function ApiStack({ stack, app }) {
                     TABLE_NAME: table.tableName,
                 },
             },
+            authorizer: "iam",
         },
         routes: {
             "GET /notes": "functions/list.main",
